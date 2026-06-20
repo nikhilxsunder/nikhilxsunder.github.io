@@ -1,11 +1,21 @@
 title: Nikhil Sunder
 description: Package architect building research-grade open-source scientific Python SDKs
 author: Nikhil Sunder
-email: ""
+email: "nsunder724@gmail.com"
 url: "https://nikhilxsunder.github.io"
 baseurl: ""
 theme: minima
 markdown: kramdown
+
+header_pages:
+  - about.md
+  - research.md
+  - development.md
+
+minima:
+  social_links:
+    github: nikhilxsunder
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
