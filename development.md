@@ -58,3 +58,29 @@ fedfred is a feature-rich Python client for the Federal Reserve Economic Data (F
 ```shell
 pip install fedfred
 ```
+
+## cultivars
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/nikhilxsunder/cultivars/main/logos/exported/cultivars_banner_transparent.png" alt="cultivars banner">
+</div>
+
+<table>
+  <tr>
+    <td valign="top">
+    <a href="https://github.com/nikhilxsunder/cultivars">
+        <img src="https://opengraph.githubassets.com/1/nikhilxsunder/cultivars"
+            alt="fedfred" width="400"
+            style="width:100%; max-width:400px; height:auto;">
+    </a>
+    </td>
+    <td valign="top">
+    
+  </tr>
+</table>
+
+cultivars is a research-grade Python SDK for autoregressive time-series modeling, built to cover the Bayesian and time-varying methods that existing Python tooling handles poorly or not at all. Where reduced-form VAR and ARIMA are treated as table stakes, its focus is the harder surface: Bayesian VAR at scale (Minnesota, NIW, SSVS, horseshoe, and hierarchical priors), time-varying-parameter VAR with stochastic volatility, and structural identification beyond Cholesky — sign, narrative, and proxy/IV schemes passed as composable strategy objects rather than bespoke classes. Every model, from univariate AR through TVP-SVAR-SV, composes through a single state-space substrate and decomposes into an immutable Spec, a transient Estimator, and a serializable Result, giving a typed, dataclass-shaped API with consistent fit, forecast, IRF, and FEVD surfaces. Designed to integrate directly with fedfred and edgar-sec, it forms the modeling layer of a FRED-to-model-to-analysis stack that no other Python library currently offers.
+
+```shell
+pip install cultivars
+```
