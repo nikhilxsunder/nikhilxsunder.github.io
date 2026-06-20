@@ -74,7 +74,6 @@ pip install fedfred
             style="width:100%; max-width:400px; height:auto;">
     </a>
     </td>
-    <td valign="top">
     
   </tr>
 </table>
@@ -84,3 +83,5 @@ cultivars is a research-grade Python SDK for autoregressive time-series modeling
 ```shell
 pip install cultivars
 ```
+
+## edgar-sec
