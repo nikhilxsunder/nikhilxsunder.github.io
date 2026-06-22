@@ -70,7 +70,7 @@ pip install fedfred
     <td valign="top">
     <a href="https://github.com/nikhilxsunder/cultivars">
         <img src="https://opengraph.githubassets.com/1/nikhilxsunder/cultivars"
-            alt="fedfred" width="400"
+            alt="cultivars" width="400"
             style="width:100%; max-width:400px; height:auto;">
     </a>
     </td>
@@ -85,3 +85,64 @@ pip install cultivars
 ```
 
 ## edgar-sec
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/nikhilxsunder/edgar-sec/main/docs/source/_static/edgar-sec_banner_transparent.png" alt="edgar-sec banner">
+</div>
+
+<table>
+  <tr>
+    <td valign="top">
+    <a href="https://github.com/edgar-sec-dev-team/edgar-sec">
+        <img src="https://opengraph.githubassets.com/1/edgar-sec-dev-team/edgar-sec"
+            alt="edgar-sec" width="400"
+            style="width:100%; max-width:400px; height:auto;">
+    </a>
+    </td>
+    <td valign="top">
+      <table>
+        <tr>
+          <td><strong>Security</strong></td>
+          <td><a href="https://www.bestpractices.dev/projects/10210"><img src="https://www.bestpractices.dev/projects/10210/badge" alt="Best Practices"></a></td>
+        </tr>
+        <tr>
+          <td><strong>Coverage</strong></td>
+          <td><a href="https://codecov.io/gh/nikhilxsunder/edgar-sec"><img src="https://codecov.io/gh/nikhilxsunder/edgar-sec/graph/badge.svg?token=VVEK415DF6" alt="Coverage"></a></td>
+        </tr>
+        <tr>
+          <td><strong>Packaging</strong></td>
+          <td><a href="https://repology.org/project/python%3Aedgar-sec/versions"><img src="https://repology.org/badge/tiny-repos/python%3Aedgar-sec.svg" alt="Repology"></a></td>
+        </tr>
+        <tr>
+          <td><strong>License</strong></td>
+          <td><a href="https://github.com/nikhilxsunder/edgar-sec/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/edgar-sec.svg" alt="License"></a></td>
+        </tr>
+        <tr>
+          <td><strong>Usage</strong></td>
+          <td>
+            <a href="https://pepy.tech/projects/edgar-sec"><img src="https://static.pepy.tech/badge/edgar-sec" alt="PyPI Downloads"></a>
+            <a href="https://anaconda.org/conda-forge/edgar-sec"><img src="https://anaconda.org/conda-forge/edgar-sec/badges/downloads.svg" alt="Conda Downloads"></a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Research / Index</strong></td>
+          <td><a href="https://doi.org/10.5281/zenodo.17635942"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17635942.svg" alt="DOI"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+edgar-sec is a research-grade, fully-typed Python SDK for the entire SEC EDGAR REST API — the structural twin of fedfred for federal securities-disclosure data. It provides ergonomic, discoverable access to the full endpoint surface (submissions, company concepts, company facts, frames, and CIK/ticker resolution) through a small public front door, with every response returned as a typed dataclass rather than a raw dict for IDE autocomplete and mypy safety. Built to the same quality bar as its sibling, it offers strict parity between synchronous and asynchronous clients, a built-in rate limiter that respects EDGAR's fair-access rules, optional local caching, and defensive type-safe handling of responses throughout. Distributed on PyPI, conda-forge, and Anaconda, it is designed as a durable data-infrastructure layer — the foundation for planned higher-order tooling like an XBRL parser, a pandas-subclassed financial dataframe, and a taxonomy×value×time tensor representation of filings.
+
+## toros
+
+toros is a pandas-backed data representation library that turns SEC filing data into self-validating financial objects. It uses registered DataFrame accessors to enforce financial semantics — type, unit, period, and taxonomy constraints — directly within the pandas backend, and layers specialized frame types (such as financial-statement representations) on top through inheritance. It serves as the interactive, semantically-aware data container that edgar-sec materializes filings into, giving researchers pandas ergonomics with domain-correct structure and validation rather than raw, untyped tables.
+
+## autonomous-fed
+
+Autonomous Fed is a reinforcement learning research project that reframes monetary policy as a control problem, in which an RL agent learns the central bank's reaction function rather than having a fixed Taylor rule imposed on it. Benchmarked against Hinterlang & Tänzer's Bundesbank work (Discussion Paper No. 51/2021), it replicates their RL environment and extends it by training policy agents inside two distinct economic environments — a linear one built on TVP-SVAR and a nonlinear one built on the NSSM state-space formulation that links to the NS-SDN project — then comparing learned policy behavior across both. The aim is a clean replication-plus-extension contribution targeting Computational Economics, demonstrating how optimal monetary policy under uncertainty changes when the agent's model of the economy moves from linear structural dynamics to a richer nonlinear spectral state space.
+
+## ns-sdn
+
+DESCRIPTION COMING SOON
