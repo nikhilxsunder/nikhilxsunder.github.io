@@ -58,6 +58,7 @@ fedfred is a feature-rich Python client for the Federal Reserve Economic Data (F
 ```shell
 pip install fedfred
 ```
+
 | [Docs](https://nikhilxsunder.github.io/fedfred/) | [PyPI](https://pypi.org/project/fedfred/) | [Conda-Forge](https://anaconda.org/channels/conda-forge/packages/fedfred/overview) | [Github](https://github.com/nikhilxsunder/fedfred) |
 
 ---
