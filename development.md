@@ -58,6 +58,7 @@ fedfred is a feature-rich Python client for the Federal Reserve Economic Data (F
 ```shell
 pip install fedfred
 ```
+| [Docs](https://nikhilxsunder.github.io/fedfred/) | [PyPI](https://pypi.org/project/fedfred/) | [Conda-Forge](https://anaconda.org/channels/conda-forge/packages/fedfred/overview) | [Github](https://github.com/nikhilxsunder/fedfred) |
 
 ## cultivars
 
@@ -83,6 +84,8 @@ cultivars is a research-grade Python SDK for autoregressive time-series modeling
 ```shell
 pip install cultivars
 ```
+
+| [Docs]() | [PyPI](https://pypi.org/project/cultivars/) | [Conda-Forge]() | [Github](https://github.com/nikhilxsunder/cultivars) |
 
 ## edgar-sec
 
@@ -135,9 +138,19 @@ pip install cultivars
 
 edgar-sec is a research-grade, fully-typed Python SDK for the entire SEC EDGAR REST API — the structural twin of fedfred for federal securities-disclosure data. It provides ergonomic, discoverable access to the full endpoint surface (submissions, company concepts, company facts, frames, and CIK/ticker resolution) through a small public front door, with every response returned as a typed dataclass rather than a raw dict for IDE autocomplete and mypy safety. Built to the same quality bar as its sibling, it offers strict parity between synchronous and asynchronous clients, a built-in rate limiter that respects EDGAR's fair-access rules, optional local caching, and defensive type-safe handling of responses throughout. Distributed on PyPI, conda-forge, and Anaconda, it is designed as a durable data-infrastructure layer — the foundation for planned higher-order tooling like an XBRL parser, a pandas-subclassed financial dataframe, and a taxonomy×value×time tensor representation of filings.
 
+```shell
+pip install edgar-sec
+```
+
+| [Docs](https://edgar-sec-dev-team.github.io/edgar-sec/) | [PyPI](https://pypi.org/project/edgar-sec/) | [Conda-Forge](https://anaconda.org/channels/conda-forge/packages/edgar-sec/overview) | [Github](https://github.com/edgar-sec-dev-team/edgar-sec) |
+
 ## toros
 
 toros is a pandas-backed data representation library that turns SEC filing data into self-validating financial objects. It uses registered DataFrame accessors to enforce financial semantics — type, unit, period, and taxonomy constraints — directly within the pandas backend, and layers specialized frame types (such as financial-statement representations) on top through inheritance. It serves as the interactive, semantically-aware data container that edgar-sec materializes filings into, giving researchers pandas ergonomics with domain-correct structure and validation rather than raw, untyped tables.
+
+```shell
+pip install toros
+```
 
 ## autonomous-fed
 
