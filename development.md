@@ -87,7 +87,7 @@ pip install cultivars
 ## edgar-sec
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/nikhilxsunder/edgar-sec/main/docs/source/_static/edgar-sec_banner_transparent.png" alt="edgar-sec banner">
+  <img src="https://raw.githubusercontent.com/edgar-sec-dev-team/edgar-sec/main/assets/exported/edgar-sec_banner.png" alt="edgar-sec banner">
 </div>
 
 <table>
