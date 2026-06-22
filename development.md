@@ -60,6 +60,8 @@ pip install fedfred
 ```
 | [Docs](https://nikhilxsunder.github.io/fedfred/) | [PyPI](https://pypi.org/project/fedfred/) | [Conda-Forge](https://anaconda.org/channels/conda-forge/packages/fedfred/overview) | [Github](https://github.com/nikhilxsunder/fedfred) |
 
+---
+
 ## cultivars
 
 <div align="center">
@@ -86,6 +88,8 @@ pip install cultivars
 ```
 
 | [Docs]() | [PyPI](https://pypi.org/project/cultivars/) | [Conda-Forge]() | [Github](https://github.com/nikhilxsunder/cultivars) |
+
+---
 
 ## edgar-sec
 
@@ -144,6 +148,8 @@ pip install edgar-sec
 
 | [Docs](https://edgar-sec-dev-team.github.io/edgar-sec/) | [PyPI](https://pypi.org/project/edgar-sec/) | [Conda-Forge](https://anaconda.org/channels/conda-forge/packages/edgar-sec/overview) | [Github](https://github.com/edgar-sec-dev-team/edgar-sec) |
 
+---
+
 ## toros
 
 toros is a pandas-backed data representation library that turns SEC filing data into self-validating financial objects. It uses registered DataFrame accessors to enforce financial semantics — type, unit, period, and taxonomy constraints — directly within the pandas backend, and layers specialized frame types (such as financial-statement representations) on top through inheritance. It serves as the interactive, semantically-aware data container that edgar-sec materializes filings into, giving researchers pandas ergonomics with domain-correct structure and validation rather than raw, untyped tables.
@@ -152,10 +158,14 @@ toros is a pandas-backed data representation library that turns SEC filing data 
 pip install toros
 ```
 
+---
+
 ## autonomous-fed
 
 Autonomous Fed is a reinforcement learning research project that reframes monetary policy as a control problem, in which an RL agent learns the central bank's reaction function rather than having a fixed Taylor rule imposed on it. Benchmarked against Hinterlang & Tänzer's Bundesbank work (Discussion Paper No. 51/2021), it replicates their RL environment and extends it by training policy agents inside two distinct economic environments — a linear one built on TVP-SVAR and a nonlinear one built on the NSSM state-space formulation that links to the NS-SDN project — then comparing learned policy behavior across both. The aim is a clean replication-plus-extension contribution targeting Computational Economics, demonstrating how optimal monetary policy under uncertainty changes when the agent's model of the economy moves from linear structural dynamics to a richer nonlinear spectral state space.
 
+---
+
 ## ns-sdn
 
-DESCRIPTION COMING SOON
+COMING SOON
