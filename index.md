@@ -37,18 +37,6 @@ title: Home
 
 ---
 
-### Research
-- **Autonomous monetary policy via RL** — replication and extensions of the Bundesbank RL paper (policy rules, non-linear environments, stability tests).  
-  - Code: [`Autonomous_Fed`](https://github.com/eskordi/Autonomous_Fed)  
-  - Data tooling: [`fedfred`](https://github.com/nikhilxsunder/fedfred)
-- **Time Series modeling/forecasting** - SVAR/TVP-VAR, Spectral Density, Oscillatory Decomposition, Gaussian Linear State-Space.
-- **Neural-network macro models** — Frequency Modulators, TFTs, N-BEATS, Spectral Networks, Wavelet Networks.
-- **SEC EDGAR pipelines** — clean, typed client for EDGAR submissions and filings with sync/async APIs.  
-  - Package: [`edgar-sec`](https://github.com/nikhilxsunder/edgar-sec) • PyPI & conda-forge  
-- **Time-series infrastructure** — standardized IO, transforms (log/YoY/pc1), and model-ready frames/series.
-
----
-
 ### Tech Stack
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white"/>
@@ -62,27 +50,6 @@ title: Home
   <img src="https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white"/>
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
   <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white"/>
-</p>
-
----
-
-### Active Development
-<p align="center">
-  <a href="https://github.com/nikhilxsunder/fedfred">
-    <img src="https://opengraph.githubassets.com/1/nikhilxsunder/fedfred" alt="fedfred" height="200"/>
-  </a>
-  <a href="https://github.com/edgar-sec-dev-team/edgar-sec">
-    <img src="https://opengraph.githubassets.com/1/edgar-sec-dev-team/edgar-sec" alt="edgar-sec" height="200"/>
-  </a>
-  <a href="https://github.com/erskordi/Autonomous_Fed">
-    <img src="https://opengraph.githubassets.com/1/erskordi/Autonomous_Fed" alt="Autonomous_Fed" height="200"/>
-  </a>
-  <a href="https://github.com/nikhilxsunder/cultivars">
-    <img src="https://opengraph.githubassets.com/1/nikhilxsunder/cultivars" alt="cultivars" height="200"/>
-  </a>
-  <a href="https://github.com/edgar-sec-dev-team/toros">
-    <img src="https://opengraph.githubassets.com/1/edgar-sec-dev-team/toros" alt="toros" height="200"/>
-  </a>
 </p>
 
 ---
