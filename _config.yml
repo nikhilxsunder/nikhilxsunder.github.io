@@ -11,6 +11,7 @@ header_pages:
   - about.md
   - research.md
   - development.md
+  - groups.md
 
 minima:
   social_links:
