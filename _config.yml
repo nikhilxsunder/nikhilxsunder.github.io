@@ -12,6 +12,7 @@ header_pages:
   - research.md
   - development.md
   - groups.md
+  - coverage.md
 
 minima:
   social_links:
