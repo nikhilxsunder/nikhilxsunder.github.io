@@ -8,7 +8,7 @@ permalink: /research/
 
 COMING SOON
 
----
+===
 
 ## Non-Stationary Spectral Decomposition Network for Econometric Time Series Forecasting
 
@@ -29,7 +29,7 @@ COMING SOON
 }
 ```
 
----
+===
 
 ## fedfred: A Python client for the Federal Reserve Economic Database (FRED) API
 
