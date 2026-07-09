@@ -21,7 +21,3 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-yamlanalytics:
-  google:
-    id: G-SHLPDJ0EPZ
