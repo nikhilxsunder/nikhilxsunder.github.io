@@ -66,7 +66,7 @@ pip install fedfred
 ## cultivars
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/nikhilxsunder/cultivars/main/logos/exported/cultivars_banner_transparent.png" alt="cultivars banner">
+  <img src="https://raw.githubusercontent.com/nikhilxsunder/cultivars/main/assets/exported/cultivars_banner_transparent.png" alt="cultivars banner">
 </div>
 
 <table>
