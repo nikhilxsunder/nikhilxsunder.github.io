@@ -173,6 +173,10 @@ pip install toros
 
 ## autonomous-fed
 
+<div align="center">
+    <img src="https://raw.githubusercontent.com/erskordi/Autonomous_Fed/src/assets/exported/autofed_banner.png"  alt="autofed Logo">
+</div>
+
 Autonomous Fed is a reinforcement learning research project that reframes monetary policy as a control problem, in which an RL agent learns the central bank's reaction function rather than having a fixed Taylor rule imposed on it. Benchmarked against Hinterlang & Tänzer's Bundesbank work (Discussion Paper No. 51/2021), it replicates their RL environment and extends it by training policy agents inside two distinct economic environments — a linear one built on TVP-SVAR and a nonlinear one built on the NSSM state-space formulation that links to the NS-SDN project — then comparing learned policy behavior across both. The aim is a clean replication-plus-extension contribution targeting Computational Economics, demonstrating how optimal monetary policy under uncertainty changes when the agent's model of the economy moves from linear structural dynamics to a richer nonlinear spectral state space.
 
 ---
