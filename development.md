@@ -163,6 +163,10 @@ COMING SOON
 
 ## toros
 
+<div align="center">
+    <img src="https://raw.githubusercontent.com/edgar-sec-dev-team/toros/main/assets/exported/toros_banner.png" alt="toros Logo">
+</div>
+
 toros is a pandas-backed data representation library that turns SEC filing data into self-validating financial objects. It uses registered DataFrame accessors to enforce financial semantics — type, unit, period, and taxonomy constraints — directly within the pandas backend, and layers specialized frame types (such as financial-statement representations) on top through inheritance. It serves as the interactive, semantically-aware data container that edgar-sec materializes filings into, giving researchers pandas ergonomics with domain-correct structure and validation rather than raw, untyped tables.
 
 ```shell
