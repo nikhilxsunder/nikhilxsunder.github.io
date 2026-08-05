@@ -33,7 +33,7 @@ COMING SOON
 
 ## fedfred: A Python client for the Federal Reserve Economic Database (FRED) API
 
-<iframe title="Preview" class="preview-iframe" id="preview-iframe" name="preview-iframe" src="/records/17635942/preview/nikhilxsunder/fedfred-v3.0.0.zip?include_deleted=0" tabindex="-1"></iframe>
+<iframe title="Preview" class="preview-iframe" id="preview-iframe" name="preview-iframe" src="https://zenodo.org/records/17635942/preview/nikhilxsunder/fedfred-v3.0.0.zip?include_deleted=0" tabindex="-1"></iframe>
 
 ```bibtex
 @software{fedfred,
