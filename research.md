@@ -23,7 +23,8 @@ COMING SOON
     url={https://journals.flvc.org/FLAIRS/article/view/141588}, 
     DOI={10.32473/flairs.39.1.141588},
     number={1}, 
-    journal={The International FLAIRS Conference Proceedings}, author={Sunder, Nikhil}, 
+    journal={The International FLAIRS Conference Proceedings},
+    author={Sunder, Nikhil}, 
     year={2026}, 
     month={May} 
 }
