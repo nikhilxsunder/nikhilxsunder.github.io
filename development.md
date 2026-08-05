@@ -63,7 +63,7 @@ pip install fedfred
 
 ---
 
-## cultivars
+## cultivars (In Development)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/nikhilxsunder/cultivars/main/assets/exported/cultivars_banner_transparent.png" alt="cultivars banner">
@@ -92,7 +92,7 @@ pip install cultivars
 
 ---
 
-## edgar-sec
+## edgar-sec (In Redevelopment)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/edgar-sec-dev-team/edgar-sec/main/assets/exported/edgar-sec_banner.png" alt="edgar-sec banner">
@@ -151,17 +151,21 @@ pip install edgar-sec
 
 ---
 
-## ns-sdn
+## ns-sdn (In Development)
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/nikhilxsunder/ns-sdn/main/assets/exported/ns-sdn_banner.png"  alt="NS-SDN Logo">
 </div>
 
-COMING SOON
+ns-sdn (Non-Stationary Spectral Decomposition Network) is a PyTorch implementation of the neural state-space architecture of the same name, packaging the model components developed across the repository's research notebooks so that the results in its companion papers are fully reproducible and the architecture is reusable beyond them. NS-SDN represents a time series as a time-varying trend plus a sum of latent sinusoidal components whose amplitude, instantaneous frequency, phase, and a learned gating weight are emitted at each step from a recurrent latent state through parallel projection heads — an adaptive, state-driven spectral decomposition rather than a fixed-basis Fourier or stationary spectral model. It draws together implicit neural representations with periodic activations (SIREN), instantaneous-frequency analysis in the spirit of the Hilbert–Huang transform, and nonlinear state-space econometrics, and it doubles as both a conditional one-step forecaster and an interpretable neural spectral-analysis tool that exposes regime-dependent trend, amplitude, frequency, and gating dynamics — demonstrated on the 10-Year Treasury yield through the 2020 macroeconomic shock. Within the broader stack it supplies the nonlinear spectral state space (the NSSM formulation) that the autofed reinforcement-learning agent trains inside, serving as the nonlinear counterpart to cultivars' linear structural time-series models.
+
+```shell
+pip install ns-sdn
+```
 
 ---
 
-## toros
+## toros (In Development)
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/edgar-sec-dev-team/toros/main/assets/exported/toros_banner.png" alt="toros Logo">
@@ -175,12 +179,16 @@ pip install toros
 
 ---
 
-## autonomous-fed
+## autofed (In Development)
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/erskordi/Autonomous_Fed/src/assets/exported/autofed_banner.png"  alt="autofed Logo">
 </div>
 
 Autonomous Fed is a reinforcement learning research project that reframes monetary policy as a control problem, in which an RL agent learns the central bank's reaction function rather than having a fixed Taylor rule imposed on it. Benchmarked against Hinterlang & Tänzer's Bundesbank work (Discussion Paper No. 51/2021), it replicates their RL environment and extends it by training policy agents inside two distinct economic environments — a linear one built on TVP-SVAR and a nonlinear one built on the NSSM state-space formulation that links to the NS-SDN project — then comparing learned policy behavior across both. The aim is a clean replication-plus-extension contribution targeting Computational Economics, demonstrating how optimal monetary policy under uncertainty changes when the agent's model of the economy moves from linear structural dynamics to a richer nonlinear spectral state space.
+
+```shell
+pip install autofed
+```
 
 ---
