@@ -95,14 +95,14 @@ pip install cultivars
 ## edgar-sec (In Redevelopment)
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/edgar-sec-dev-team/edgar-sec/main/assets/exported/edgar-sec_banner.png" alt="edgar-sec banner">
+  <img src="https://raw.githubusercontent.com/toros-dev/edgar-sec/main/assets/exported/edgar-sec_banner.png" alt="edgar-sec banner">
 </div>
 
 <table>
   <tr>
     <td valign="top">
-    <a href="https://github.com/edgar-sec-dev-team/edgar-sec">
-        <img src="https://opengraph.githubassets.com/1/edgar-sec-dev-team/edgar-sec"
+    <a href="https://github.com/toros-dev/edgar-sec">
+        <img src="https://opengraph.githubassets.com/1/toros-dev/edgar-sec"
             alt="edgar-sec" width="400"
             style="width:100%; max-width:400px; height:auto;">
     </a>
@@ -115,7 +115,7 @@ pip install cultivars
         </tr>
         <tr>
           <td><strong>Coverage</strong></td>
-          <td><a href="https://codecov.io/gh/nikhilxsunder/edgar-sec"><img src="https://codecov.io/gh/nikhilxsunder/edgar-sec/graph/badge.svg?token=VVEK415DF6" alt="Coverage"></a></td>
+          <td><a href="https://codecov.io/gh/toros-dev/edgar-sec"><img src="https://codecov.io/gh/toros-dev/edgar-sec/graph/badge.svg?token=VVEK415DF6" alt="Coverage"></a></td>
         </tr>
         <tr>
           <td><strong>Packaging</strong></td>
@@ -123,7 +123,7 @@ pip install cultivars
         </tr>
         <tr>
           <td><strong>License</strong></td>
-          <td><a href="https://github.com/nikhilxsunder/edgar-sec/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/edgar-sec.svg" alt="License"></a></td>
+          <td><a href="https://github.com/toros-dev/edgar-sec/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/edgar-sec.svg" alt="License"></a></td>
         </tr>
         <tr>
           <td><strong>Usage</strong></td>
@@ -168,7 +168,7 @@ pip install ns-sdn
 ## toros (In Development)
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/edgar-sec-dev-team/toros/main/assets/exported/toros_banner.png" alt="toros Logo">
+    <img src="https://raw.githubusercontent.com/toros-dev/toros/main/assets/exported/toros_banner.png" alt="toros Logo">
 </div>
 
 toros is a pandas-backed data representation library that turns SEC filing data into self-validating financial objects. It uses registered DataFrame accessors to enforce financial semantics — type, unit, period, and taxonomy constraints — directly within the pandas backend, and layers specialized frame types (such as financial-statement representations) on top through inheritance. It serves as the interactive, semantically-aware data container that edgar-sec materializes filings into, giving researchers pandas ergonomics with domain-correct structure and validation rather than raw, untyped tables.
