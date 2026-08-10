@@ -16,13 +16,13 @@ Approaching its 40th anniversary, the ICSRI has grown alongside AI's return to t
 
 ---
 
-## edgar-sec-dev-team
+## toros-dev
 
 ***Founder & Lead Developer***
 
-The edgar-sec-dev-team is a research-oriented engineering group building high-quality, open-source infrastructure for the acquisition, transformation, and analysis of U.S. SEC EDGAR filings, with an emphasis on reliable, reproducible, model-ready data systems spanning structured extraction, XBRL parsing, and the reconstruction of consistent financial time series across filings, companies, and reporting regimes. Its flagship project, edgar-sec, is a modular Python toolkit that abstracts EDGAR's raw data formats behind a clean, extensible interface for researchers, developers, and quantitative analysts, emphasizing deterministic and reproducible pipelines, robust API and SDK design, cross-filing normalization and entity resolution, time-series reconstruction from disclosures, and integration with modern data workflows including pandas, polars, and dask. The team's philosophy is grounded in research-grade software engineering, combining econometrics, machine learning, and systems design to produce tools suitable for both academic research and production-grade analytics.
+The toros-dev team is a research-oriented engineering group building high-quality, open-source infrastructure for the acquisition, transformation, and analysis of XBRL filings, with an emphasis on reliable, reproducible, model-ready data systems spanning structured extraction, XBRL parsing, and the reconstruction of consistent financial time series across filings, companies, and reporting regimes. Its flagship project, edgar-sec, is a modular Python toolkit that abstracts EDGAR's raw data formats behind a clean, extensible interface for researchers, developers, and quantitative analysts, emphasizing deterministic and reproducible pipelines, robust API and SDK design, cross-filing normalization and entity resolution, time-series reconstruction from disclosures, and integration with modern data workflows including pandas, polars, and dask. The team's philosophy is grounded in research-grade software engineering, combining econometrics, machine learning, and systems design to produce tools suitable for both academic research and production-grade analytics.
 
-[More info](https://github.com/edgar-sec-dev-team)
+[More info](https://github.com/toros-dev)
 
 ### Associated works
 
