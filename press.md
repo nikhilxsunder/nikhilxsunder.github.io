@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Press
+title: Press & Recognition
 permalink: /press/
 ---
 
