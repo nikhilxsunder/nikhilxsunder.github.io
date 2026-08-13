@@ -14,6 +14,10 @@ Approaching its 40th anniversary, the ICSRI has grown alongside AI's return to t
 
 ### Associated works
 
+- [Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation]()
+- [Non-Stationary Spectral Decomposition Network for Econometric Time Series Forecasting](https://journals.flvc.org/FLAIRS/article/view/141588)
+- [NS-SDN: A modern neural architecture in python for decomposing non-stationary time series into interpretable trend and spectral components.]
+
 ---
 
 ## toros-dev
