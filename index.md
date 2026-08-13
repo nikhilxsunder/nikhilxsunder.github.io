@@ -1,4 +1,4 @@
-6---
+---
 layout: home
 permalink: /
 ---
