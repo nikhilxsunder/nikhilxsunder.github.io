@@ -4,8 +4,6 @@ title: Development
 permalink: /development/
 ---
 
-# Development
-
 Open-source Python infrastructure for computational economics, built as one stack: acquisition libraries pull from primary sources, representation layers give the data typed structure, and modeling libraries sit on top. Each package is independently useful and released to the same standard — full type coverage, sync/async parity, defensive validation, and archived releases with citable DOIs.
 
 | Layer | Project | Status |

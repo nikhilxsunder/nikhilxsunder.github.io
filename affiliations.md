@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Groups
-permalink: /groups/
+title: Affiliations
+permalink: /affiliations/
 ---
 
 # Affiliations

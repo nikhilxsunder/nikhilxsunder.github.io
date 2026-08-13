@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About
-
 I build research software for economics, and I do research that needs it.
 
 Most quantitative economics runs on code that was never meant to survive the paper it was written for — notebooks that depend on a specific CSV in a specific folder, scrapers that break when a government website changes its markup, estimators reimplemented from scratch by every researcher who needs them. The result is a field where reproducing a result is often harder than producing it. I have spent the last two years building the alternative: installable, typed, tested, documented, citable packages that handle the parts of the pipeline nobody should have to rewrite.
