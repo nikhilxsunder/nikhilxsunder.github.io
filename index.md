@@ -55,7 +55,7 @@ Current work centers on state-space models, spectral decomposition, and reinforc
 
 ### Affiliations
 
-[**ICSRI · toros-dev →**](/groups/) &nbsp;·&nbsp; [**Press &amp; coverage →**](/coverage/) &nbsp;·&nbsp; [**About me →**](/about/)
+[**ICSRI · toros-dev →**](/affiliations/) &nbsp;·&nbsp; [**Press &amp; coverage →**](/coverage/) &nbsp;·&nbsp; [**About me →**](/about/)
 
 ---
 
