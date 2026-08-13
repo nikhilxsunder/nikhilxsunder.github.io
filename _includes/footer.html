@@ -1,0 +1,58 @@
+<footer class="site-footer">
+  <div class="wrapper footer-grid">
+
+    <div class="footer-col footer-col--identity">
+      <p class="footer-name">{{ site.title }}</p>
+      <p class="footer-tagline">{{ site.tagline }}</p>
+      <p class="footer-blurb">
+        Open-source infrastructure for computational economics — acquisition,
+        representation, and modeling for reproducible research.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">Site</h3>
+      <ul class="footer-list">
+        <li><a href="{{ '/about/'       | relative_url }}">About</a></li>
+        <li><a href="{{ '/development/' | relative_url }}">Development</a></li>
+        <li><a href="{{ '/research/'    | relative_url }}">Research</a></li>
+        <li><a href="{{ '/groups/'      | relative_url }}">Groups</a></li>
+        <li><a href="{{ '/press/'       | relative_url }}">Press</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">Packages</h3>
+      <ul class="footer-list">
+        <li><a href="https://github.com/nikhilxsunder/fedfred">fedfred</a></li>
+        <li><a href="https://github.com/toros-dev/edgar-sec">edgar-sec</a></li>
+        <li><a href="https://github.com/toros-dev/toros">toros</a></li>
+        <li><a href="https://github.com/nikhilxsunder/cultivars">cultivars</a></li>
+        <li><a href="https://github.com/nikhilxsunder/ns-sdn">ns-sdn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">Elsewhere</h3>
+      <ul class="footer-list">
+        <li><a href="https://github.com/nikhilxsunder" rel="me">GitHub</a></li>
+        <li><a href="https://github.com/toros-dev" rel="me">toros-dev</a></li>
+        <li><a href="https://orcid.org/0009-0007-3323-1760" rel="me">ORCID</a></li>
+        <li><a href="https://pypi.org/user/nikhil.sunder" rel="me">PyPI</a></li>
+        <li><a href="https://www.linkedin.com/in/nikhil-sunder" rel="me">LinkedIn</a></li>
+        <li><a href="mailto:{{ site.email }}">Email</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="wrapper footer-bottom">
+    <span>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | default: site.title }}</span>
+    <span class="footer-sep">·</span>
+    <span>Built with <a href="https://jekyllrb.com/">Jekyll</a></span>
+    <span class="footer-sep">·</span>
+    <span><a href="{{ '/feed.xml' | relative_url }}">RSS</a></span>
+    <span class="footer-sep">·</span>
+    <span><a href="https://github.com/nikhilxsunder/nikhilxsunder.github.io">Source</a></span>
+  </div>
+</footer>
