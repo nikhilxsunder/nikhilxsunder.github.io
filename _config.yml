@@ -1,25 +1,80 @@
+# --- Site identity ---
 title: Nikhil Sunder
-description: Undergraduate student and research fellow at the University of Miami, Herbert Business School, and Intelligent Computer Systems Research Institute. Open-source package architect and developer. 
-author: Nikhil Sunder
-email: "nsunder724@gmail.com"
+tagline: Quantitative Economics & Finance · Open-Source Scientific Software
+description: >-
+  Undergraduate in Quantitative Economics & Finance at the University of Miami
+  Herbert Business School and Research Fellow at the Intelligent Computer Systems
+  Research Institute. Open-source package architect building infrastructure for
+  computational economics: fedfred, edgar-sec, toros, cultivars, and ns-sdn.
+author:
+  name: Nikhil Sunder
+  email: nsunder724@gmail.com
+email: nsunder724@gmail.com
+lang: en_US
+timezone: America/New_York
+
 url: "https://nikhilxsunder.github.io"
 baseurl: ""
+
+# --- Build ---
 theme: minima
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
 
+# --- Navigation (order matters) ---
 header_pages:
   - about.md
-  - research.md
   - development.md
+  - research.md
   - groups.md
-  - coverage.md
+  - press.md
 
 minima:
+  skin: auto
   social_links:
     github: nikhilxsunder
+    linkedin: nikhil-sunder
 
+# --- SEO / social preview ---
+twitter:
+  card: summary_large_image
+social:
+  name: Nikhil Sunder
+  links:
+    - https://github.com/nikhilxsunder
+    - https://github.com/toros-dev
+    - https://www.linkedin.com/in/nikhil-sunder
+    - https://orcid.org/0009-0007-3323-1760
+    - https://pypi.org/user/nikhil.sunder
+
+# --- Plugins ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# --- Defaults ---
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# --- Exclusions ---
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - README.md
+  - LICENSE
+  - .github
+  - node_modules
+  - "*.gem"
 
 google_analytics: G-SHLPDJ0EPZ

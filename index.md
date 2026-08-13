@@ -1,81 +1,64 @@
 ---
 layout: home
-title: Home
+permalink: /
 ---
-
-<p align="center">
-  <img src="https://mbaveterans.com/wp-content/uploads/2021/10/MIAMI-BUSINESS-logo.png" alt="University of Miami Herbert Business School" width="700"/>
-</p>
 
 <h1 align="center">Nikhil Sunder</h1>
-<h3 align="center">Quantitative Economics & Finance | University of Miami Herbert Business School</h3>
+<h3 align="center">Quantitative Economics &amp; Finance · Open-Source Scientific Software</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&center=true&vCenter=true&width=780&lines=Quantitative+Economics+%26+Finance;Reinforcement+Learning+in+Monetary+Policy;SVAR+and+Financial+Econometrics;Open-Source+Developer" alt="Typing Intro"/>
+  <em>Building open-source infrastructure for computational economics — from raw data acquisition to model-ready analysis.</em>
 </p>
 
 <p align="center">
-  <a href="https://github.com/nikhilxsunder"><img src="https://img.shields.io/badge/status-updating-brightgreen.svg"></a>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=nikhilxsunder.nikhilxsunder" alt="visitors"/> 
-  <a href="https://www.linkedin.com/in/nikhil-sunder"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white"></a>
-  <a href="mailto:nsunder724@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white"></a>
-  <a href="https://pypi.org/user/nikhil.sunder"><img src="https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=pypi&logoColor=white"></a>
-  <a href="https://orcid.org/0009-0007-3323-1760">
-    <img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID">
-  </a>
+  <a href="https://github.com/nikhilxsunder"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://github.com/toros-dev"><img src="https://img.shields.io/badge/toros--dev-181717?style=flat&logo=github&logoColor=white" alt="toros-dev"></a>
+  <a href="https://pypi.org/user/nikhil.sunder"><img src="https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=pypi&logoColor=white" alt="PyPI"></a>
+  <a href="https://orcid.org/0009-0007-3323-1760"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID"></a>
+  <a href="https://www.linkedin.com/in/nikhil-sunder"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
 ---
 
-### About Me
-- B.S.B.A. in **Quantitative Economics & Finance**, **Mathematics Minor**
-- University of Miami ICSRI Research Fellow.
-- Open-source developer — creator of **[`fedfred`](https://github.com/nikhilxsunder/fedfred)** and **[`edgar-sec`](https://github.com/nikhilxsunder/edgar-sec)**  
-- Research: **Reinforcement Learning in Monetary Policy**, **SVAR modeling**, **Econometrics**, **Neural Networks** 
-- Interests: Econometrics • Neural Networks • Machine Learning • Python ecosystem design • Quantitative Research & Development
-- Goal: Build scalable, open-source infrastructure for computational economics
+I am an undergraduate in Quantitative Economics &amp; Finance at the University of Miami Herbert Business School(https://www.mbs.miami.edu), a Research Fellow at the [Intelligent Computer Systems Research Institute](https://www.herbert.miami.edu/faculty-research/research-labs-centers-institutes/icsri/index.html), and founder of [toros-dev](https://github.com/toros-dev). My work sits at the intersection of econometrics, machine learning, and research-grade software engineering: I build the data infrastructure that quantitative research depends on, and I use it to study non-stationary dynamics and monetary policy.
+
+The through-line is a single stack. **Acquisition** libraries pull economic and disclosure data from primary sources. **Representation** layers turn that data into typed, validated structures. **Modeling** libraries — linear and neural — sit on top. Each piece is released as a durable, documented, independently useful artifact rather than as research code.
 
 ---
 
-### Tech Stack
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Polars-4083F4?style=for-the-badge&logo=rust&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white"/>
-</p>
+### Software
+
+Production Python packages on PyPI and conda-forge, built to a consistent standard: full type coverage, strict sync/async parity, defensive validation, OpenSSF Best Practices certification, and archived releases with citable DOIs.
+
+| Project | Role in the stack | Status |
+|---|---|---|
+| [`fedfred`](https://github.com/nikhilxsunder/fedfred) | FRED / ALFRED / GeoFRED / FRASER client | Released |
+| [`edgar-sec`](https://github.com/toros-dev/edgar-sec) | SEC EDGAR REST API client | Released |
+| [`toros`](https://github.com/toros-dev/toros) | Self-validating financial data representation | In development |
+| [`cultivars`](https://github.com/nikhilxsunder/cultivars) | Bayesian, time-varying, and structural VAR | In development |
+| [`ns-sdn`](https://github.com/nikhilxsunder/ns-sdn) | Neural spectral state-space architecture | In development |
+
+[**See all projects →**](/development/)
 
 ---
 
-### GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nikhilxsunder&show_icons=true&theme=tokyonight&rank_icon=github" alt="GitHub Stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikhilxsunder&layout=donut&theme=tokyonight" alt="Top Languages" height="170"/>
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=nikhilxsunder&theme=tokyonight" alt="Github Streak" />
-  </a>
-</p>
+### Research
+
+Current work centers on state-space models, spectral decomposition, and reinforcement learning for monetary policy.
+
+- **NS-SDN** — a neural state-space architecture that decomposes non-stationary time series into a time-varying trend plus adaptive spectral components, published at [FLAIRS-39](https://journals.flvc.org/FLAIRS/article/view/141588) with a follow-up on adaptive spectral emission heads under review.
+- **Autonomous Fed** — reframing monetary policy as a control problem, benchmarking an RL agent against Hinterlang &amp; Tänzer (Bundesbank DP 51/2021) across linear TVP-SVAR and nonlinear NSSM environments.
+
+[**Read the papers →**](/research/)
 
 ---
 
-### Metrics Dashboard
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nikhilxsunder/nikhilxsunder/main/github-metrics.svg" alt="GitHub Metrics"/>
-</p>
+### Affiliations
+
+[**ICSRI · toros-dev →**](/groups/) &nbsp;·&nbsp; [**Press &amp; coverage →**](/coverage/) &nbsp;·&nbsp; [**About me →**](/about/)
 
 ---
 
-### Trophies & Contributions
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nikhilxsunder&theme=tokyonight&margin-w=10&margin-h=10&no-frame=true" alt="Trophies"/>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nikhilxsunder/nikhilxsunder/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation"/>
+  <a href="mailto:nsunder724@gmail.com"><img src="https://img.shields.io/badge/Get%20in%20touch-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
