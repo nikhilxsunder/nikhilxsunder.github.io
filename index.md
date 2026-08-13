@@ -1,4 +1,4 @@
----
+6---
 layout: home
 permalink: /
 ---
@@ -20,7 +20,7 @@ permalink: /
 
 ---
 
-I am an undergraduate in Quantitative Economics &amp; Finance at the University of Miami Herbert Business School(https://www.mbs.miami.edu), a Research Fellow at the [Intelligent Computer Systems Research Institute](https://www.herbert.miami.edu/faculty-research/research-labs-centers-institutes/icsri/index.html), and founder of [toros-dev](https://github.com/toros-dev). My work sits at the intersection of econometrics, machine learning, and research-grade software engineering: I build the data infrastructure that quantitative research depends on, and I use it to study non-stationary dynamics and monetary policy.
+I am an undergraduate in Quantitative Economics &amp; Finance at the [University of Miami Herbert Business School](https://www.mbs.miami.edu), a Research Fellow at the [Intelligent Computer Systems Research Institute](https://www.herbert.miami.edu/faculty-research/research-labs-centers-institutes/icsri/index.html), and founder of [toros-dev](https://github.com/toros-dev). My work sits at the intersection of econometrics, machine learning, and research-grade software engineering: I build the data infrastructure that quantitative research depends on, and I use it to study non-stationary dynamics and monetary policy.
 
 The through-line is a single stack. **Acquisition** libraries pull economic and disclosure data from primary sources. **Representation** layers turn that data into typed, validated structures. **Modeling** libraries — linear and neural — sit on top. Each piece is released as a durable, documented, independently useful artifact rather than as research code.
 
