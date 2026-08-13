@@ -4,8 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-# Research
-
 Peer-reviewed papers and citable software artifacts. My work centers on state-space models, spectral decomposition of non-stationary time series, and the data infrastructure that makes reproducible econometric research possible.
 
 | Work | Venue | Year | Type |

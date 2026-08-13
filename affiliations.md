@@ -4,8 +4,6 @@ title: Affiliations
 permalink: /affiliations/
 ---
 
-# Affiliations
-
 Research and engineering groups I work within — one academic, one open-source.
 
 ---
