@@ -31,6 +31,7 @@ header_pages:
   - research.md
   - affiliations.md
   - press.md
+  - cv.md
 
 minima:
   skin: auto
