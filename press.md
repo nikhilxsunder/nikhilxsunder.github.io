@@ -4,8 +4,6 @@ title: Press & Recognition
 permalink: /press/
 ---
 
-# Press &amp; Recognition
-
 Coverage of my work from the University of Miami, the Herbert Business School, and the wider community.
 
 ---
