@@ -8,7 +8,7 @@ Peer-reviewed papers and citable software artifacts. My work centers on state-sp
 
 | Work | Venue | Year | Type |
 |---|---|---|---|
-| [Adaptive Spectral Emission Heads and Frequency Modulation](#nssdn-ii) | Under review | 2026 | Paper |
+| [Nonstationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation](#nssdn-ii) | Under review | 2026 | Paper |
 | [Non-Stationary Spectral Decomposition Network for Econometric Time Series Forecasting](#nssdn-i) | FLAIRS-39 | 2026 | Paper |
 | [fedfred](#fedfred) | Zenodo | 2025 | Software |
 
@@ -18,6 +18,7 @@ Peer-reviewed papers and citable software artifacts. My work centers on state-sp
 
 <p>
   <img src="https://img.shields.io/badge/status-under%20review-orange.svg" alt="Status: under review">
+  <img src="https://img.shields.io/badge/venue-IEEE%20Xplore-00629B.svg" alt="IEEE Xplore">
   <img src="https://img.shields.io/badge/type-conference%20paper-blue.svg" alt="Conference paper">
 </p>
 
