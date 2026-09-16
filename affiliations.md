@@ -25,7 +25,7 @@ Approaching its 40th anniversary, ICSRI assembles researchers across machine lea
 
 | Work | Type | Status |
 |---|---|---|
-| Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation | Paper | Under review |
+| [Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation](https://ieeexplore.ieee.org/document/11684282) | Paper | IEEE-ORSS 2026 |
 | [Non-Stationary Spectral Decomposition Network for Econometric Time Series Forecasting](https://journals.flvc.org/FLAIRS/article/view/141588) | Paper | FLAIRS-39, 2026 |
 | [`ns-sdn`](https://github.com/nikhilxsunder/ns-sdn) — neural architecture for decomposing non-stationary time series into interpretable trend and spectral components | Software | In development |
 
