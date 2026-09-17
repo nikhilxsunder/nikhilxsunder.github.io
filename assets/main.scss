@@ -86,3 +86,31 @@ $footer-muted:  #6a6a6a;
 }
 
 .footer-sep { margin: 0 0.5rem; opacity: 0.5; }
+
+// --- Announcement bar ---
+.announcement {
+  background: $grey-color-dark;
+  color: #fff;
+  font-size: $small-font-size;
+  line-height: 1.4;
+  padding: 0.5rem 0;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    white-space: nowrap;
+
+    &:hover { color: lighten($brand-color, 25%); }
+  }
+}

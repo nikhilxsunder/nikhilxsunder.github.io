@@ -79,3 +79,9 @@ exclude:
   - "*.gem"
 
 google_analytics: G-SHLPDJ0EPZ
+
+announcement:
+  enabled: true
+  text: "New paper: Non-Stationary Spectral Decomposition Network II, IEEE ORSS 2026."
+  link_text: "Read on IEEE Xplore"
+  url: "https://doi.org/10.1109/ORSS71174.2026.11684282"

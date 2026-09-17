@@ -1,0 +1,8 @@
+{%- if site.announcement.enabled -%}
+<div class="announcement" role="status">
+  <div class="wrapper">
+    <span class="announcement-text">{{ site.announcement.text | escape }}</span>
+    <a class="announcement-link" href="{{ site.announcement.url | relative_url }}">{{ site.announcement.link_text | escape }} &rarr;</a>
+  </div>
+</div>
+{%- endif -%}
