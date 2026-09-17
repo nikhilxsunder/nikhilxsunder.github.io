@@ -127,8 +127,9 @@ Every model, from univariate AR through TVP-SVAR-SV, composes through a single s
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-orange.svg" alt="Status: in development">
+  <img src="https://img.shields.io/badge/status-research%20project-blueviolet.svg" alt="Status: research project">
   <a href="https://journals.flvc.org/FLAIRS/article/view/141588"><img src="https://img.shields.io/badge/DOI-10.32473%2Fflairs.39.1.141588-blue.svg" alt="FLAIRS DOI"></a>
+  <a href="https://doi.org/10.1109/ORSS71174.2026.11684282"><img src="https://img.shields.io/badge/DOI-10.1109%2FORSS71174.2026.11684282-blue.svg" alt="DOI"></a>
   <a href="https://github.com/nikhilxsunder/ns-sdn"><img src="https://img.shields.io/github/last-commit/nikhilxsunder/ns-sdn.svg" alt="Last commit"></a>
 </p>
 
@@ -140,7 +141,7 @@ NS-SDN represents a time series as a time-varying trend plus a sum of latent sin
 
 Within the broader stack it supplies the nonlinear spectral state space (the NSSM formulation) that the autofed reinforcement-learning agent trains inside, serving as the nonlinear counterpart to cultivars' linear structural time-series models.
 
-[Paper (FLAIRS-39)](https://journals.flvc.org/FLAIRS/article/view/141588) · [GitHub](https://github.com/nikhilxsunder/ns-sdn)
+[Paper (FLAIRS-39)](https://journals.flvc.org/FLAIRS/article/view/141588) · [Paper (IEEE-ORSS 2026)](https://doi.org/10.1109/ORSS71174.2026.11684282) · [GitHub](https://github.com/nikhilxsunder/ns-sdn)
 
 ---
 
