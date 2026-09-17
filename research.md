@@ -8,24 +8,43 @@ Peer-reviewed papers and citable software artifacts. My work centers on state-sp
 
 | Work | Venue | Year | Type |
 |---|---|---|---|
-| [Adaptive Spectral Emission Heads and Frequency Modulation](#nssdn-ii) | IEEE-ORSS 2026 | 2026 | Paper |
+| [Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation](#nssdn-ii) | IEEE-ORSS 2026 | 2026 | Paper |
 | [Non-Stationary Spectral Decomposition Network for Econometric Time Series Forecasting](#nssdn-i) | FLAIRS-39 | 2026 | Paper |
-| [fedfred](#fedfred) | Zenodo | 2025 | Software |
+| [fedfred: A Python client for the Federal Reserve Economic Database (FRED) API](#fedfred) | Zenodo | 2025 | Software |
 
 ---
 
 <h2 id="nssdn-ii">Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation</h2>
 
 <p>
-  <img src="https://img.shields.io/badge/status-under%20review-orange.svg" alt="Status: under review">
+  <a href="https://doi.org/10.1109/ORSS71174.2026.11684282"><img src="https://img.shields.io/badge/DOI-10.1109%2FORSS71174.2026.11684282-blue.svg" alt="DOI"></a>
+  <img src="https://img.shields.io/badge/venue-IEEE%20ORSS%202026-00629B.svg" alt="IEEE ORSS 2026">
   <img src="https://img.shields.io/badge/type-conference%20paper-blue.svg" alt="Conference paper">
 </p>
 
-**Nikhil Sunder** · 2026
+**Nikhil Sunder** · *2026 IEEE Opportunity Research Scholars Symposium (ORSS)* · IEEE Xplore · 2026
 
-The second paper in the NS-SDN arc, extending the base architecture with adaptive spectral emission heads and explicit frequency modulation. Where the FLAIRS paper established that a recurrent latent state can emit interpretable amplitude, frequency, and phase trajectories, this work examines how the emission mechanism itself should be parameterized — and what that choice implies for the model's ability to track regime transitions in the frequency domain.
+The second paper in the NS-SDN arc. The FLAIRS paper established that a recurrent latent state can emit interpretable amplitude, instantaneous-frequency, and phase trajectories through a single spectral emission equation; this work treats the emission mechanism itself as the design variable. It replaces the monolithic emission map with adaptive spectral emission heads — separate, state-conditioned parameterizations for amplitude, frequency, and phase — and introduces explicit frequency modulation so that instantaneous frequency is driven directly by the latent dynamics rather than recovered implicitly from phase increments. The result is a decomposition whose frequency content can shift within a regime, not just between regimes, which is the property a nonstationary econometric series actually demands. [One sentence on the empirical result: series used, comparison against NS-SDN-I, and what the modulated emission buys in forecast error or spectral coherence.]
 
-Preprint and full details to follow once the review process concludes.
+[Read on IEEE Xplore](https://ieeexplore.ieee.org/document/11684282) · [Code](https://github.com/nikhilxsunder/ns-sdn)
+
+<details>
+<summary><strong>Citation (BibTeX)</strong></summary>
+
+{% highlight bibtex %}
+@inproceedings{Sunder_2026_ORSS,
+    title     = {Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation},
+    author    = {Sunder, Nikhil},
+    booktitle = {2026 IEEE Opportunity Research Scholars Symposium (ORSS)},
+    publisher = {IEEE},
+    year      = {2026},
+    pages     = {},
+    doi       = {10.1109/ORSS71174.2026.11684282},
+    url       = {https://ieeexplore.ieee.org/document/11684282}
+}
+{% endhighlight %}
+
+</details>
 
 ---
 
