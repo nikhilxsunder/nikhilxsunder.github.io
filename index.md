@@ -46,7 +46,7 @@ Production Python packages on PyPI and conda-forge, built to a consistent standa
 
 Current work centers on state-space models, spectral decomposition, and reinforcement learning for monetary policy.
 
-- **NS-SDN** — a neural state-space architecture that decomposes non-stationary time series into a time-varying trend plus adaptive spectral components, published at [FLAIRS-39](https://journals.flvc.org/FLAIRS/article/view/141588) with a follow-up on adaptive spectral emission heads under review.
+- **NS-SDN** — a neural state-space architecture that decomposes non-stationary time series into a time-varying trend plus adaptive spectral components, published at [FLAIRS-39](https://journals.flvc.org/FLAIRS/article/view/141588) with a follow-up published at [IEEE-ORSS 2026](https://ieeexplore.ieee.org/document/11684282).
 - **Autonomous Fed** — reframing monetary policy as a control problem, benchmarking an RL agent against Hinterlang &amp; Tänzer (Bundesbank DP 51/2021) across linear TVP-SVAR and nonlinear NSSM environments.
 
 [**Read the papers →**](/research/)

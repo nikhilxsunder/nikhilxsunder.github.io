@@ -8,9 +8,42 @@ Peer-reviewed papers and citable software artifacts. My work centers on state-sp
 
 | Work | Venue | Year | Type |
 |---|---|---|---|
+| [cultivars: Research-grade time series econometrics for Python](#cultivars) | Zenodo | 2026 | Software |
 | [Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation](#nssdn-ii) | IEEE-ORSS 2026 | 2026 | Paper |
 | [Non-Stationary Spectral Decomposition Network for Econometric Time Series Forecasting](#nssdn-i) | FLAIRS-39 | 2026 | Paper |
 | [fedfred: A Python client for the Federal Reserve Economic Database (FRED) API](#fedfred) | Zenodo | 2025 | Software |
+
+---
+
+<h2 id="cultivars">cultivars: Research-grade time series econometrics for Python</h2>
+
+<p>
+  <a href="https://doi.org/10.5281/zenodo.23028848"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23028848.svg" alt="DOI"></a>
+  <img src="https://img.shields.io/badge/type-software-blue.svg" alt="Software">
+  <a href="https://pypi.org/project/cultivars/"><img src="https://img.shields.io/github/v/release/nikhilxsunder/cultivars?include_prereleases&label=pypi" alt="PyPI version"></a>
+</p>
+
+**Nikhil Sunder** · Zenodo · v3.0.0 · 2025
+
+A citable software artifact providing full-coverage access to the Federal Reserve's FRED, ALFRED, and GeoFRED/Maps endpoints through a typed Python interface, with sync and async clients, built-in rate limiting and caching, and native returns to pandas, polars, dask, and GeoPandas. Archived on Zenodo so that analyses depending on it can cite an exact, permanently resolvable version.
+
+[Zenodo record](https://doi.org/10.5281/zenodo.17635942) · [Documentation](https://nikhilxsunder.github.io/fedfred/) · [Code](https://github.com/nikhilxsunder/fedfred) · [Project detail →](/development/#fedfred)
+
+<details>
+<summary><strong>Citation (BibTeX)</strong></summary>
+
+{% highlight bibtex %}
+@software{cultivars,
+  author    = {Sunder, Nikhil},
+  title     = {cultivars: Research-grade time series econometrics for Python},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23028848},
+  url       = {https://github.com/nikhilxsunder/cultivars}
+}
+{% endhighlight %}
+
+</details>
 
 ---
 
@@ -38,7 +71,6 @@ The second paper in the NS-SDN arc. The FLAIRS paper established that a recurren
     booktitle = {2026 IEEE Opportunity Research Scholars Symposium (ORSS)},
     publisher = {IEEE},
     year      = {2026},
-    pages     = {},
     doi       = {10.1109/ORSS71174.2026.11684282},
     url       = {https://ieeexplore.ieee.org/document/11684282}
 }

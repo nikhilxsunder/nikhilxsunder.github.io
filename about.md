@@ -23,7 +23,7 @@ B.S.B.A., Quantitative Economics &amp; Finance · Minor in Mathematics
 
 Coursework across calculus, linear algebra, probability theory, mathematical statistics, and econometrics.
 
-**Next:** Looking for masters by research in computer science and computational science program, with a research focus on state-space methods, spectral representation learning, and reinforcement learning for economic control problems. Specifically interested in programs located in Hong Kong, Singapore, Malaysia and Australia.
+**Next:** Looking for masters by research in computer science and computational science program, with a research focus on state-space methods, spectral representation learning, and reinforcement learning for economic control problems. Specifically interested in programs located in Hong Kong, Singapore, Taiwan, Malaysia and Australia.
 
 ---
 
@@ -51,7 +51,7 @@ A few commitments that show up in everything I publish:
 
 ## Technical
 
-**Primary:** Python 3.13 · PyTorch · NumPy · pandas · Polars · Dask · httpx
+**Primary:** Python 3.14 · PyTorch · NumPy · pandas · Polars · Dask · httpx
 
 **Also:** Swift · C# / .NET · LaTeX · Git
 

@@ -11,7 +11,7 @@ Open-source Python infrastructure for computational economics, built as one stac
 | Acquisition | [`fedfred`](#fedfred) — Federal Reserve data | Released |
 | Acquisition | [`edgar-sec`](#edgar-sec) — SEC EDGAR filings | Released |
 | Representation | [`toros`](#toros) — self-validating financial objects | In development |
-| Modeling | [`cultivars`](#cultivars) — Bayesian &amp; structural VAR | In development |
+| Modeling | [`cultivars`](#cultivars) — Bayesian &amp; structural VAR | Pre-released |
 | Modeling | [`ns-sdn`](#ns-sdn) — neural spectral state space | In development |
 | Application | [`autofed`](#autofed) — RL for monetary policy | Research |
 
@@ -106,8 +106,13 @@ Flagship project of [toros-dev](https://github.com/toros-dev).
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-orange.svg" alt="Status: in development">
-  <a href="https://github.com/nikhilxsunder/cultivars"><img src="https://img.shields.io/github/last-commit/nikhilxsunder/cultivars.svg" alt="Last commit"></a>
+  <a href="https://codecov.io/gh/nikhilxsunder/cultivars"><img src="https://codecov.io/gh/nikhilxsunder/cultivars/graph/badge.svg?token=59TQ2HO8BW)" alt="Coverage"></a>
+  <a href="https://pypi.org/project/cultivars/"><img src="https://img.shields.io/github/v/release/nikhilxsunder/cultivars?include_prereleases&label=pypi" alt="PyPI version"></a>
+  <a href="https://pypi.org/project/cultivars/"><img src="https://img.shields.io/pypi/pyversions/cultivars.svg" alt="Python versions"></a>
+  <a href="https://github.com/nikhilxsunder/cultivars/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/cultivars.svg" alt="License"></a>
+  <a href="https://pepy.tech/projects/cultivars"><img src="https://static.pepy.tech/badge/cultivars" alt="PyPI Downloads"></a>
+  <a href="https://repology.org/project/python%3Acultivars/versions"><img src="https://repology.org/badge/tiny-repos/python%3Acultivars.svg" alt="Repology"></a>
+  <a href="https://doi.org/10.5281/zenodo.23028848"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23028848.svg" alt="DOI"></a>
 </p>
 
 > **A modern computing library in Python for vector autoregressions and other autoregressive economic models.**
@@ -116,7 +121,7 @@ cultivars is a research-grade Python SDK for autoregressive time-series modeling
 
 Every model, from univariate AR through TVP-SVAR-SV, composes through a single state-space substrate and decomposes into an immutable `Spec`, a transient `Estimator`, and a serializable `Result`, giving a typed, dataclass-shaped API with consistent fit, forecast, IRF, and FEVD surfaces. Designed to integrate directly with fedfred and edgar-sec, it forms the modeling layer of a FRED-to-model-to-analysis stack that no other Python library currently offers.
 
-[GitHub](https://github.com/nikhilxsunder/cultivars)
+[Docs](https://nikhilxsunder.github.io/cultivars/1.0.0a3/index.html) · [PyPI](https://pypi.org/project/cultivars/) · [GitHub](https://github.com/nikhilxsunder/cultivars)
 
 ---
 
