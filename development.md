@@ -4,15 +4,15 @@ title: Development
 permalink: /development/
 ---
 
-Open-source Python infrastructure for computational economics, built as one stack: acquisition libraries pull from primary sources, representation layers give the data typed structure, and modeling libraries sit on top. Each package is independently useful and released to the same standard — full type coverage, sync/async parity, defensive validation, and archived releases with citable DOIs.
+Open-source Python infrastructure for computational economics, built as one stack: acquisition libraries pull from primary sources, representation layers give the data typed structure, and modeling libraries sit on top. Each package is independently useful and released to the same standard — full type coverage, sync/async parity where there is I/O, defensive validation, documentation generated from doctested docstrings, signed releases, and archived versions with citable DOIs.
 
 | Layer | Project | Status |
 |---|---|---|
-| Acquisition | [`fedfred`](#fedfred) — Federal Reserve data | Released |
-| Acquisition | [`edgar-sec`](#edgar-sec) — SEC EDGAR filings | Released |
+| Acquisition | [`fedfred`](#fedfred) — Federal Reserve data | Released (3.0.0)|
+| Acquisition | [`edgar-sec`](#edgar-sec) — SEC EDGAR filings | Released (2.0.1) |
 | Representation | [`toros`](#toros) — self-validating financial objects | In development |
-| Modeling | [`cultivars`](#cultivars) — Bayesian &amp; structural VAR | Pre-released |
-| Modeling | [`ns-sdn`](#ns-sdn) — neural spectral state space | In development |
+| Modeling | [`cultivars`](#cultivars) — time series econometrics | Pre-released (1.0.0a4) |
+| Modeling | [`ns-sdn`](#ns-sdn) — neural spectral state space | Released (1.0.0) |
 | Application | [`autofed`](#autofed) — RL for monetary policy | Research |
 
 ---
@@ -106,22 +106,26 @@ Flagship project of [toros-dev](https://github.com/toros-dev).
 </div>
 
 <p align="center">
-  <a href="https://codecov.io/gh/nikhilxsunder/cultivars"><img src="https://codecov.io/gh/nikhilxsunder/cultivars/graph/badge.svg?token=59TQ2HO8BW)" alt="Coverage"></a>
-  <a href="https://pypi.org/project/cultivars/"><img src="https://img.shields.io/github/v/release/nikhilxsunder/cultivars?include_prereleases&label=pypi" alt="PyPI version"></a>
+  <a href="https://codecov.io/gh/nikhilxsunder/cultivars"><img src="https://codecov.io/gh/nikhilxsunder/cultivars/graph/badge.svg?token=59TQ2HO8BW" alt="Coverage"></a>
+  <a href="https://pypi.org/project/cultivars/"><img src="https://img.shields.io/pypi/v/cultivars.svg?include_prereleases" alt="PyPI version"></a>
   <a href="https://pypi.org/project/cultivars/"><img src="https://img.shields.io/pypi/pyversions/cultivars.svg" alt="Python versions"></a>
   <a href="https://github.com/nikhilxsunder/cultivars/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/cultivars.svg" alt="License"></a>
   <a href="https://pepy.tech/projects/cultivars"><img src="https://static.pepy.tech/badge/cultivars" alt="PyPI Downloads"></a>
   <a href="https://repology.org/project/python%3Acultivars/versions"><img src="https://repology.org/badge/tiny-repos/python%3Acultivars.svg" alt="Repology"></a>
-  <a href="https://doi.org/10.5281/zenodo.23028848"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23028848.svg" alt="DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.23028870"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23028870.svg" alt="DOI"></a>
 </p>
 
-> **A modern computing library in Python for vector autoregressions and other autoregressive economic models.**
+> **Research-grade time series econometrics for Python: ARIMA to state space, VAR to structural identification, Bayesian and spectral methods, on one estimation surface.**
 
-cultivars is a research-grade Python SDK for autoregressive time-series modeling, built to cover the Bayesian and time-varying methods that existing Python tooling handles poorly or not at all. Where reduced-form VAR and ARIMA are treated as table stakes, its focus is the harder surface: Bayesian VAR at scale (Minnesota, NIW, SSVS, horseshoe, and hierarchical priors), time-varying-parameter VAR with stochastic volatility, and structural identification beyond Cholesky — sign, narrative, and proxy/IV schemes passed as composable strategy objects rather than bespoke classes.
+cultivars is a single, typed, dependency-light library for the econometric time-series toolkit, written so that a research result can be reproduced from the summary it prints. Every model is a class holding a specification; `fit()` (or `identify()`) returns an immutable record that renders the same way everywhere, carries its own diagnostics, and refuses to report what its assumptions do not support. Estimation and identification are separate acts: a reduced form is fitted once and reports only what the data determine, and anything that needs an assumption — a causal ordering, a sign pattern, an instrument, a prior — is constructed from that result and restates the assumption in its own summary, so an impulse response can always be traced to what signed it.
 
-Every model, from univariate AR through TVP-SVAR-SV, composes through a single state-space substrate and decomposes into an immutable `Spec`, a transient `Estimator`, and a serializable `Result`, giving a typed, dataclass-shaped API with consistent fit, forecast, IRF, and FEVD surfaces. Designed to integrate directly with fedfred and edgar-sec, it forms the modeling layer of a FRED-to-model-to-analysis stack that no other Python library currently offers.
+The modeling surface is now complete across ten areas: univariate models from ARIMA and SARIMAX through the GARCH family, stochastic volatility, unobserved components and regime-switching autoregressions; reduced-form VARs, VECMs, panel, mixed-frequency and global VARs; large-dimensional Bayesian VARs with Minnesota, hierarchical and shrinkage priors, dynamic factor models and FAVAR; nonlinear, quantile and time-varying-parameter VARs with Markov switching; structural identification by recursive, long-run, sign, narrative, instrument, heteroskedasticity and non-Gaussian schemes, set-identification bounds, and perturbation-solved DSGE estimation; a linear-Gaussian state-space substrate with nonlinear and particle filters; spectral and wavelet analysis; Bayesian diagnostics and model combination; forecast evaluation; and the standard battery of unit-root, cointegration, break and stability tests. Dependencies are `numpy`, `scipy` and `fedfred`, so it reads FRED directly and forms the modeling layer of the acquisition-to-model stack above.
 
-[Docs](https://nikhilxsunder.github.io/cultivars/1.0.0a3/index.html) · [PyPI](https://pypi.org/project/cultivars/) · [GitHub](https://github.com/nikhilxsunder/cultivars)
+```shell
+pip install --pre cultivars
+```
+
+[Docs](https://nikhilxsunder.github.io/cultivars/stable/) · [PyPI](https://pypi.org/project/cultivars/) · [GitHub](https://github.com/nikhilxsunder/cultivars) · [Zenodo](https://doi.org/10.5281/zenodo.23028870)
 
 ---
 
@@ -132,21 +136,29 @@ Every model, from univariate AR through TVP-SVAR-SV, composes through a single s
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-research%20project-blueviolet.svg" alt="Status: research project">
-  <a href="https://journals.flvc.org/FLAIRS/article/view/141588"><img src="https://img.shields.io/badge/DOI-10.32473%2Fflairs.39.1.141588-blue.svg" alt="FLAIRS DOI"></a>
-  <a href="https://doi.org/10.1109/ORSS71174.2026.11684282"><img src="https://img.shields.io/badge/DOI-10.1109%2FORSS71174.2026.11684282-blue.svg" alt="DOI"></a>
-  <a href="https://github.com/nikhilxsunder/ns-sdn"><img src="https://img.shields.io/github/last-commit/nikhilxsunder/ns-sdn.svg" alt="Last commit"></a>
+  <a href="https://codecov.io/gh/nikhilxsunder/ns-sdn"><img src="https://codecov.io/gh/nikhilxsunder/ns-sdn/graph/badge.svg" alt="Coverage"></a>
+  <a href="https://pypi.org/project/ns-sdn/"><img src="https://img.shields.io/pypi/v/ns-sdn.svg" alt="PyPI version"></a>
+  <a href="https://pypi.org/project/ns-sdn/"><img src="https://img.shields.io/pypi/pyversions/ns-sdn.svg" alt="Python versions"></a>
+  <a href="https://github.com/nikhilxsunder/ns-sdn/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/ns-sdn.svg" alt="License"></a>
+  <a href="https://pepy.tech/projects/ns-sdn"><img src="https://static.pepy.tech/badge/ns-sdn" alt="PyPI Downloads"></a>
+  <a href="https://doi.org/10.5281/zenodo.23368625"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23368625.svg" alt="DOI"></a>
+  <a href="https://doi.org/10.32473/flairs.39.1.141588"><img src="https://img.shields.io/badge/FLAIRS--39-10.32473%2Fflairs.39.1.141588-blue.svg" alt="FLAIRS-39 DOI"></a>
+  <a href="https://doi.org/10.1109/ORSS71174.2026.11684282"><img src="https://img.shields.io/badge/IEEE%20ORSS-10.1109%2FORSS71174.2026.11684282-blue.svg" alt="IEEE ORSS DOI"></a>
 </p>
 
-> **A modern neural architecture in Python for decomposing non-stationary time series into interpretable trend and spectral components.**
+> **A neural state-space model that decomposes a non-stationary time series into a trend and a few sinusoids whose amplitude, frequency and participation move with a latent state, and reads the decomposition back as coordinates.**
 
-ns-sdn (Non-Stationary Spectral Decomposition Network) is a PyTorch implementation of the neural state-space architecture of the same name, packaging the model components developed across the repository's research notebooks so that the results in its companion papers are fully reproducible and the architecture is reusable beyond them.
+ns-sdn is the Non-Stationary Spectral Decomposition Network as a stable, citable Python package. At each step a GRU latent state emits a trend and $K$ sinusoids through parallel linear heads — amplitude, instantaneous frequency, phase offset and a gate per component — and the phase integrates the frequency, so every component is a chirp the state can steer. The network is trained as a one-step predictor with drift penalties on the amplitudes and frequencies, and read as an adaptive, state-driven spectral decomposition rather than a fixed-basis Fourier or stationary spectral model, drawing together implicit neural representations with periodic activations (SIREN), instantaneous-frequency analysis in the spirit of the Hilbert–Huang transform, and nonlinear state-space econometrics. It is the formulation of the IEEE-ORSS 2026 paper (Sunder and Leon) and the architecture introduced at FLAIRS-39, demonstrated on the 10-Year Treasury yield through the 2020 macroeconomic shock.
 
-NS-SDN represents a time series as a time-varying trend plus a sum of latent sinusoidal components whose amplitude, instantaneous frequency, phase, and a learned gating weight are emitted at each step from a recurrent latent state through parallel projection heads — an adaptive, state-driven spectral decomposition rather than a fixed-basis Fourier or stationary spectral model. It draws together implicit neural representations with periodic activations (SIREN), instantaneous-frequency analysis in the spirit of the Hilbert–Huang transform, and nonlinear state-space econometrics, and it doubles as both a conditional one-step forecaster and an interpretable neural spectral-analysis tool that exposes regime-dependent trend, amplitude, frequency, and gating dynamics — demonstrated on the 10-Year Treasury yield through the 2020 macroeconomic shock.
+Version 1.0.0 freezes the API in the cultivars model-fit-result pattern: `NSSDN` is the validated specification, whose defaults reproduce the published DGS10 run to its 58,849 parameters; `fit()` returns a frozen `NSSDNResult` carrying every path the papers' figures are drawn from — trend, amplitude, frequency, phase, gate, components and latent state — on the original scale, with conditional one-step prediction and recursive forecasting; and `SpectralState` reads the decomposition as a time-local measure on the frequency axis, reporting centroid, dispersion, entropy, effective component count, Wasserstein velocity and a disentanglement score, so a regime claim such as the spectral compression around 2020 is made in coordinates that survive a refit rather than in component indices. The documentation site derives the model equation by equation, the API reference carries the mathematics in every docstring, and the example gallery includes a one-command reproduction of the ORSS experiment. Developed as fellowship research under the ICSRI Fellows Program at the University of Miami Herbert Business School; MIT-licensed, with signed releases and a Zenodo DOI per version.
 
 Within the broader stack it supplies the nonlinear spectral state space (the NSSM formulation) that the autofed reinforcement-learning agent trains inside, serving as the nonlinear counterpart to cultivars' linear structural time-series models.
 
-[Paper (FLAIRS-39)](https://journals.flvc.org/FLAIRS/article/view/141588) · [Paper (IEEE-ORSS 2026)](https://doi.org/10.1109/ORSS71174.2026.11684282) · [GitHub](https://github.com/nikhilxsunder/ns-sdn)
+```shell
+pip install ns-sdn
+```
+
+[Docs](https://nikhilxsunder.github.io/ns-sdn/stable/) · [PyPI](https://pypi.org/project/ns-sdn/) · [GitHub](https://github.com/nikhilxsunder/ns-sdn) · [Zenodo](https://doi.org/10.5281/zenodo.23368625) · [Paper (IEEE-ORSS 2026)](https://doi.org/10.1109/ORSS71174.2026.11684282) · [Paper (FLAIRS-39)](https://doi.org/10.32473/flairs.39.1.141588)
 
 ---
 
