@@ -10,7 +10,7 @@ Most quantitative economics runs on code that was never meant to survive the pap
 
 That work started with `fedfred`, a client for the Federal Reserve's FRED family of APIs, which I wrote because I needed macroeconomic series for a project and found the existing options unmaintained or incomplete. It now has a few tens of thousands of downloads and a DOI. `edgar-sec` followed for SEC EDGAR disclosure data. `toros` is the representation layer those clients materialize into financial objects with enforced semantics rather than untyped tables. Lastly, `cultivars` is the modeling layer above them, targeting the Bayesian and time-varying VAR methods that Python handles poorly compared to R and MATLAB.
 
-The research side runs in parallel and sets the agenda. My main line is NS-SDN, a neural state-space architecture that decomposes a time series into a time-varying trend plus latent oscillatory components whose amplitude, frequency, and phase are emitted at each step from a recurrent state comprising an adaptive spectral decomposition rather than a fixed Fourier basis. The first paper was published at FLAIRS-39. A second, on adaptive spectral emission heads and frequency modulation, was published at IEEE ORSS 2026. It grew out of a question about the 10-Year Treasury through the 2020 shock that no stationary spectral method could answer cleanly. A related project reframes monetary policy as a control problem, training reinforcement-learning agents to learn a central bank's reaction function inside both linear TVP-SVAR and nonlinear state-space economies, benchmarked against Hinterlang and Tänzer's Bundesbank work.
+The research side runs in parallel and sets the agenda. My main line is NS-SDN, a neural state-space architecture that decomposes a time series into a time-varying trend plus latent oscillatory components whose amplitude, frequency, and phase are emitted at each step from a recurrent state comprising an adaptive spectral decomposition rather than a fixed Fourier basis. The first paper was published at FLAIRS-39. A second on adaptive spectral emission heads is under review at IEEE. It grew out of a question about the 10-Year Treasury through the 2020 shock that no stationary spectral method could answer cleanly. A related project reframes monetary policy as a control problem, training reinforcement-learning agents to learn a central bank's reaction function inside both linear TVP-SVAR and nonlinear state-space economies, benchmarked against Hinterlang and Tänzer's Bundesbank work.
 
 I care about the engineering as much as the econometrics, and I think the separation between them is largely artificial. A model you cannot install is a claim, not a result.
 
@@ -19,11 +19,11 @@ I care about the engineering as much as the econometrics, and I think the separa
 ## Education
 
 **University of Miami**, Herbert Business School — Coral Gables, FL
-B.S.B.A., expected 2027
+B.S.B.A., Quantitative Economics &amp; Finance · Minor in Mathematics
 
 Coursework across calculus, linear algebra, probability theory, mathematical statistics, and econometrics.
 
-**Next:** Looking for a master's by research in computer science or computational science, with a research focus on state-space methods, spectral representation learning, and reinforcement learning for economic control problems. Specifically interested in programs located in Hong Kong, Singapore, Taiwan, Malaysia, and Australia.
+**Next:** Looking for masters by research in computer science and computational science program, with a research focus on state-space methods, spectral representation learning, and reinforcement learning for economic control problems. Specifically interested in programs located in Hong Kong, Singapore, Taiwan, Malaysia and Australia.
 
 ---
 
